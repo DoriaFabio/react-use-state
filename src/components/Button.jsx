@@ -5,13 +5,13 @@ function Button() {
     const lang = [...languages];
     const [activelang, setActivelang] = useState(lang[0]);
     return (
-        <div className="my-4 container">
-            <ul className="d-flex align-items-center flex-wrap unstyle">
+        <div className="m-4">
+            <ul className="d-flex unstyle">
                 {lang.map((lang) => (
-                    <li key={lang.id} onClick={() => setActivelang(lang)} className='mx-3 p-3 text-bg-primary'>{lang.title}</li>
+                    <li key={lang.id} onClick={() => setActivelang(lang)} className='btn btn-primary mx-3'>{lang.title}</li>
                 ))}
             </ul>
-            <div className="box">
+            <div className="box rounded">
                 <h3>{activelang.title}</h3>
                 <p>{activelang.description}</p>
             </div>
