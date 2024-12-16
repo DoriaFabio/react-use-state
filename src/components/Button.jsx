@@ -11,7 +11,7 @@ function Button() {
                     <li key={lang.id} onClick={() => setActivelang(lang)} className='btn btn-primary mx-3'>{lang.title}</li>
                 ))}
             </ul>
-            <div className="box rounded">
+            <div className="box rounded mt-5">
                 <h3>{activelang.title}</h3>
                 <p>{activelang.description}</p>
             </div>
